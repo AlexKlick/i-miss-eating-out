@@ -1,5 +1,3 @@
-require 'pry'
-
 class Restaurant
 
     attr_reader :opening_time, :name, :dishes
@@ -44,14 +42,3 @@ class Restaurant
     end
 
 end
-restaurant = Restaurant.new('10:00', 'Fuel Cafe')
-p restaurant.opening_time
-p restaurant.name
-p restaurant.dishes
-restaurant.add_dish('Burrata')
-restaurant.add_dish('Pizzetta')
-restaurant.add_dish('Ravioli')
-restaurant = Restaurant.new('16:00', 'Il Poggio')
-restaurant.announce_closing_time(5)
-
-binding.pry
